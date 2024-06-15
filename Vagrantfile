@@ -32,7 +32,7 @@ do
   systemctl enable "$service"
 done
 
-
+echo "running jenkins as a docker container"
 docker run \
   -u root \
   --rm \
