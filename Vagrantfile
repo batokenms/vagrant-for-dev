@@ -27,6 +27,7 @@ services=( "docker" "apache2" "mysql" )
 for service in "${services[@]}"
 do
   echo "starting and enableling $service"
+  echo "service"
   systemctl start "$service"
   systemctl enable "$service"
 done
